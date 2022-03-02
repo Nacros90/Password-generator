@@ -2,7 +2,7 @@ import random
 from re import A
         #afficher les instructions ici
 
-        #Il faut utiliser un dictionnaire
+        #Il faut utiliser un dictionnaire ou des listes, le type de variable str ne fonctionne pas
 
 start=1
 while start==1:
