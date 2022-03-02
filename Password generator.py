@@ -2,7 +2,7 @@ import random
 from re import A
         #afficher les instructions ici
 
-        #Il faut utiliser un dictionnaire ou des listes, le type de variable str ne fonctionne pas
+        #Il faut utiliser des listes, le type de variable str ne fonctionne pas
 MDP=[]
 start=1
 while start==1:
@@ -13,4 +13,17 @@ while start==1:
             MDP.append("a")
         elif n==2:
             MDP.append("b")
-    print(MDP)
+        elif n==3:
+            MDP.append("c")
+        elif n==4:
+            MDP.append("d")
+        elif n==5:
+            MDP.append("e")
+                                #il faut continuer la génération de caractéres
+
+    print("Votre MDP est :",MDP)
+    print("Il faut ignorer les crochets, les apostrophes et les virgules.")
+    start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+print()
+print("Fin du programme")
+print()
