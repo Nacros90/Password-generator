@@ -19,6 +19,10 @@ while start==1:
             MDP.append("d")
         elif n==5:
             MDP.append("e")
+        elif n==6:
+            MDP.append("f")
+        elif n==7:
+            MDP.append("g")
                                 #il faut continuer la génération de caractéres
 
     print("Votre MDP est :",MDP)
