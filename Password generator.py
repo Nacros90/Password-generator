@@ -61,6 +61,22 @@ while start==1:
             MDP.append("y")
         elif n==26:
             MDP.append("z")
+        elif n==27:
+            MDP.append("A")
+        elif n==28:
+            MDP.append("B")
+        elif n==29:
+            MDP.append("C")
+        elif n==30:
+            MDP.append("D")
+        elif n==31:
+            MDP.append("E")
+        elif n==32:
+            MDP.append("F")
+        elif n==33:
+            MDP.append("G")
+        elif n==34:
+            MDP.append("H")
                                 #il faut continuer la génération de caractéres
 
     print("Votre MDP est :",MDP)
