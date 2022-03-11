@@ -8,7 +8,7 @@ start=1
 while start==1:
     nb_cara=int(input("Nombre de caractére du MDP ?"))
     for x in range(0,nb_cara):
-        n=random.randint(1,26)
+        n=random.randint(1,52)
         if n==1:
             MDP.append("a")
         elif n==2:
@@ -77,8 +77,43 @@ while start==1:
             MDP.append("G")
         elif n==34:
             MDP.append("H")
-                                #il faut continuer la génération de caractéres
-
+        elif n==35:
+            MDP.append("I")
+        elif n==36:
+            MDP.append("J")
+        elif n==37:
+            MDP.append("K")
+        elif n==38:
+            MDP.append("L")
+        elif n==39:
+            MDP.append("M")
+        elif n==40:
+            MDP.append("N")
+        elif n==41:
+            MDP.append("O")
+        elif n==42:
+            MDP.append("P")
+        elif n==43:
+            MDP.append("Q")
+        elif n==44:
+            MDP.append("R")
+        elif n==45:
+            MDP.append("S")
+        elif n==46:
+            MDP.append("T")
+        elif n==47:
+            MDP.append("U")
+        elif n==48:
+            MDP.append("V")
+        elif n==49:
+            MDP.append("W")
+        elif n==50:
+            MDP.append("X")
+        elif n==51:
+            MDP.append("Y")
+        elif n==52:
+            MDP.append("Z")
+                                                #Il faut vider la liste après avoir afficher le MDP, car le MDP suivant s'y ajoute
     print("Votre MDP est :",MDP)
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
     start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
