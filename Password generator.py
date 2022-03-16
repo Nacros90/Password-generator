@@ -113,6 +113,61 @@ while start==1:
             MDP.append("Y")
         elif n==52:
             MDP.append("Z")
+        elif n==53:
+            MDP.append("1")
+        elif n==54:
+            MDP.append("2")
+        elif n==55:
+            MDP.append("3")
+        elif n==56:
+            MDP.append("4")
+        elif n==57:
+            MDP.append("5")
+        elif n==58:
+            MDP.append("6")
+        elif n==59:
+            MDP.append("7")
+        elif n==60:
+            MDP.append("8")
+        elif n==61:
+            MDP.append("9")
+        elif n==62:
+            MDP.append("/")
+        elif n==63:
+            MDP.append("*")
+        elif n==64:
+            MDP.append("-")
+        elif n==65:
+            MDP.append("+")
+        elif n==66:
+            MDP.append("(")
+        elif n==67:
+            MDP.append(")")
+        elif n==68:
+            MDP.append("{")
+        elif n==69:
+            MDP.append("}")
+        elif n==70:
+            MDP.append("[")
+        elif n==71:
+            MDP.append("]")
+        elif n==72:
+            MDP.append("@")
+        elif n==73:
+            MDP.append("&")
+        elif n==74:
+            MDP.append("#")
+        elif n==75:
+            MDP.append("!")
+        elif n==76:
+            MDP.append("?")
+        elif n==77:
+            MDP.append("$")
+        elif n==78:
+            MDP.append("0")
+        elif n==79:
+            MDP.append("_")
+        
     print("Votre MDP est :",MDP)
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
     del MDP[0:nb_cara]                                                              #système permettant de vider la liste
