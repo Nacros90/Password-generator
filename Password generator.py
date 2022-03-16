@@ -1,6 +1,5 @@
 import random
 from re import A
-        #afficher les instructions ici
 print()
 print("Ce programme sert à générer un mot de passe de manière totalement aléatoire. L'utilisateur peut définir la longueur du mot de passe, c'est à dire le nombre de caractère du mot de passe.")
 print()
