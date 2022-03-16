@@ -5,6 +5,8 @@ print()
 print("Ce programme sert à générer un mot de passe de manière totalement aléatoire. L'utilisateur peut définir la longueur du mot de passe, c'est à dire le nombre de caractère du mot de passe.")
 print()
 print("Les caractères prit en compte pour le mot de passe sont : les lettres majuscule et minuscule (sauf les caractères accentutués), les chiffres de 0 à 9, et les caractères spéciaux (&; #; {; }; (; ); -; +; /; *; $; %; ?; !, @; <; >.).")
+print()
+print()
 MDP=[]
 start=1
 while start==1:
