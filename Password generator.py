@@ -113,9 +113,9 @@ while start==1:
             MDP.append("Y")
         elif n==52:
             MDP.append("Z")
-                                                #Il faut vider la liste après avoir afficher le MDP, car le MDP suivant s'y ajoute
     print("Votre MDP est :",MDP)
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
+    del MDP[0:nb_cara]                                                              #système permettant de vider la liste
     start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
 print()
 print("Fin du programme")
