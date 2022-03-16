@@ -1,14 +1,16 @@
 import random
 from re import A
         #afficher les instructions ici
-
-        #Il faut utiliser des listes, le type de variable str ne fonctionne pas
+print()
+print("Ce programme sert à générer un mot de passe de manière totalement aléatoire. L'utilisateur peut définir la longueur du mot de passe, c'est à dire le nombre de caractère du mot de passe.")
+print()
+print("Les caractères prit en compte pour le mot de passe sont : les lettres majuscule et minuscule (sauf les caractères accentutués), les chiffres de 0 à 9, et les caractères spéciaux (&; #; {; }; (; ); -; +; /; *; $; %; ?; !, @; <; >.).")
 MDP=[]
 start=1
 while start==1:
     nb_cara=int(input("Nombre de caractére du MDP ?"))
     for x in range(0,nb_cara):
-        n=random.randint(1,52)
+        n=random.randint(1,80)
         if n==1:
             MDP.append("a")
         elif n==2:
@@ -148,9 +150,9 @@ while start==1:
         elif n==69:
             MDP.append("}")
         elif n==70:
-            MDP.append("[")
+            MDP.append("<")
         elif n==71:
-            MDP.append("]")
+            MDP.append(">")
         elif n==72:
             MDP.append("@")
         elif n==73:
@@ -167,7 +169,6 @@ while start==1:
             MDP.append("0")
         elif n==79:
             MDP.append("_")
-        
     print("Votre MDP est :",MDP)
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
     del MDP[0:nb_cara]                                                              #système permettant de vider la liste
