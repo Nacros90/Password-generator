@@ -564,7 +564,7 @@ while start==1:
             elif n==61:
                 MDP.append("9")
             elif n==62:
-                MDP.append("/")
+                MDP.append("0")
             elif n==63:
                 MDP.append("*")
             elif n==64:
@@ -596,7 +596,7 @@ while start==1:
             elif n==77:
                 MDP.append("$")
             elif n==78:
-                MDP.append("0")
+                MDP.append("/")
             elif n==79:
                 MDP.append("_")
         print("Votre MDP est :",MDP)
