@@ -41,9 +41,6 @@ while start==1:
             typevarfin2=79
         n=random.randint(typevardebut,typevarfin)
         n2=random.randint(typevardebut2,typevarfin2)
-        print(n2)                                                   #Test
-        if n2>=1 and n2<=52:
-            print('oui normalement')                                #Test
         if type==1:
             n2=n
         if type==3 and n2>=1 and n2<=52:
@@ -53,10 +50,6 @@ while start==1:
         if type==5 and n2>=1 and n2<=52:
             n2=n
         if n2>=1 and n2<=52:
-            print("Oui!!")                                          #Test
-
-                                                                    #Le programme ne donne pas à n2 la valeur de n,
-                                                                    #c'est pour ca que les lettres ne sont pas générés lors de la génération de type 3
         if n==1 and n2==n:
             MDP.append("a")
         elif n==2 and n2==n:
