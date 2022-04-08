@@ -9,8 +9,8 @@ print()
 MDP=[]
 start=1
 while start==1:
-    nb_cara=int(input("Nombre de caractére du MDP ?"))
-    type=int(input("Quels type de caractères doit contenir de MDP ? (1. Lettres; 2. Chiffres; 3. Lettres et chiffres; 4. Lettres et caractères spéciaux; 5. Lettres, chiffres et cractères spéciaux) :"))
+    nb_cara=int(input("Nombre de caractére du MDP ? "))
+    type=int(input("Quels type de caractères doit contenir de MDP ? (1. Lettres; 2. Chiffres; 3. Lettres et chiffres; 4. Lettres et caractères spéciaux; 5. Lettres, chiffres et cractères spéciaux) : "))
     print()
     if type==1:
         for x in range(0,nb_cara):
