@@ -49,7 +49,6 @@ while start==1:
             n2=n
         if type==5 and n2>=1 and n2<=52:
             n2=n
-        if n2>=1 and n2<=52:
         if n==1 and n2==n:
             MDP.append("a")
         elif n==2 and n2==n:
