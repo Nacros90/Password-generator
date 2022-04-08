@@ -125,7 +125,7 @@ while start==1:
         del MDP[0:nb_cara]
         print()
         print()
-        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
     if type==2:
         for x in range(0,nb_cara):
             n=random.randint(1,11)
@@ -155,7 +155,7 @@ while start==1:
         del MDP[0:nb_cara]
         print()
         print()
-        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
     if type==3:
         for x in range(0,nb_cara):
             n=random.randint(1,63)
@@ -289,7 +289,7 @@ while start==1:
         del MDP[0:nb_cara]
         print()
         print()
-        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
     if type==4:
         for x in range(0,nb_cara):
             n=random.randint(1,70)
@@ -437,7 +437,7 @@ while start==1:
         del MDP[0:nb_cara]
         print()
         print()
-        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
     if type==5:
         for x in range(0,nb_cara):
             n=random.randint(1,80)
@@ -605,7 +605,7 @@ while start==1:
         del MDP[0:nb_cara]
         print()
         print()
-        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non)"))
+        start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
 print()
 print("Fin du programme")
 print()
