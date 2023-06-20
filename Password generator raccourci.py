@@ -210,7 +210,7 @@ while start==1:
     print("Votre MDP est :",MDP)
     print()
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
-    del MDP[0:nb_cara]
+    del MDP[0:nb_cara] #modifier le programme pour alléger le temps de calcul avec la commande MPD.clear()
     print()
     print()
     start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
