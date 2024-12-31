@@ -7,40 +7,40 @@ print("Les caractères prit en compte pour le mot de passe sont : les lettres ma
 print()
 print()
 MDP=[]
-start=1
-while start==1:
+start=True
+while start:
     nb_cara=int(input("Nombre de caractére du MDP ? "))
     print()
-    type=int(input("Quels type de caractères doit contenir de MDP ? (1. Lettres; 2. Chiffres; 3. Lettres et chiffres; 4. Lettres et caractères spéciaux; 5. Lettres, chiffres et cractères spéciaux) : "))
+    type=int(input("Quels type de caractères doit contenir de MDP ? ([1] Lettres; [2] Chiffres; [3] Lettres et chiffres; [4] Lettres et caractères spéciaux; [5] Lettres, chiffres et cractères spéciaux) : "))
     print()
     for x in range(0,nb_cara):
-        if type==1:
+        if type==1:                                     #Lettres
             typevardebut=1
             typevarfin=52
             typevardebut2=0
             typevarfin2=0
-        if type==2:
+        if type==2:                                     #Chiffres
             typevardebut=53
             typevarfin=62
             typevardebut2=0
             typevarfin2=0
-        if type==3:
+        if type==3:                                     #Lettres et chiffres
             typevardebut=1
             typevarfin=62
             typevardebut2=1
             typevarfin2=52
-        if type==4:
+        if type==4:                                     #Lettres et caractères spéciaux
             typevardebut=1
             typevarfin=52
             typevardebut2=1
-            typevarfin2=79
-        if type==5:
+            typevarfin2=84
+        if type==5:                                     #Lettres, chiffres et caractères spéciaux
             typevardebut=1
-            typevarfin=79
+            typevarfin=84
             typevardebut2=1
-            typevarfin2=79
+            typevarfin2=84
         n=random.randint(typevardebut,typevarfin)
-        n2=random.randint(typevardebut2,typevarfin2)
+        n2=random.randint(typevardebut2,typevarfin2)    #n2 est utilisé pour les types 3, 4 et 5, il nous permet de séléctionner autres choses que des lettres
         if type==1:
             n2=n
         if type==3 and n2>=1 and n2<=52:
@@ -207,15 +207,29 @@ while start==1:
             MDP.append("/")
         elif n==79 or n2==79:
             MDP.append("_")
+        elif n==80 or n2==80:
+            MDP.append("%")
+        elif n==81 or n2==81:
+            MDP.append("[")
+        elif n==82 or n2==82:
+            MDP.append("]")
+        elif n==83 or n2==83:
+            MDP.append("'")
+        elif n==84 or n2==84:
+            MDP.append(",")
     print("Votre MDP est :")
     for i in range(0,nb_cara):
         print(MDP[i],end="")
     print()
-    print("Il faut ignorer les crochets, les apostrophes et les virgules.")
     del MDP[0:nb_cara]
     print()
     print()
-    start=int(input("Vouler générer un nouveau MDP ? (1.Oui; 2.Non) "))
+    restart=str(input("Voulez-vous générer un autre MDP ? ([Y] Oui; [N] Non) : "))
+    if restart=="Y" or restart=="y":
+        start=True
+    else:
+        start=False
+    print()
 print()
 print("Fin du programme")
 print()
