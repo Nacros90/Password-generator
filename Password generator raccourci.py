@@ -207,7 +207,9 @@ while start==1:
             MDP.append("/")
         elif n==79 or n2==79:
             MDP.append("_")
-    print("Votre MDP est :",MDP)
+    print("Votre MDP est :")
+    for i in range(0,nb_cara):
+        print(MDP[i],end="")
     print()
     print("Il faut ignorer les crochets, les apostrophes et les virgules.")
     del MDP[0:nb_cara]
