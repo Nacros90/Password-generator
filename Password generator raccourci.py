@@ -221,7 +221,7 @@ while start:
     for i in range(0,nb_cara):
         print(MDP[i],end="")
     print()
-    del MDP[0:nb_cara]
+    MDP.clear()
     print()
     print()
     restart=str(input("Voulez-vous générer un autre MDP ? ([Y] Oui; [N] Non) : "))
